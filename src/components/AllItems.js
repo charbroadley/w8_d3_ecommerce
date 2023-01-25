@@ -1,11 +1,14 @@
 import Item from "./Item"
 
-const AllItems = () => {
+const AllItems = ({allProducts, addToBasket}) => {
+    const pizzas = allProducts.map((pizza) => {
+        return <Item key={pizza.id} pizza={pizza} addToBasket={addToBasket}></Item>
+    })
+
     return(
-        <>
-        "This is all items"
-        <Item/>
-        </>
+        <ul>
+        {pizzas}
+        </ul>
     )
 }
 

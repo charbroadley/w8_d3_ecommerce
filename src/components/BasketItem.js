@@ -1,8 +1,7 @@
-const BasketItem = () => {
+const BasketItem = ({item}) => {
     return(
         <>
-        "This is bask Item"
-
+        <li>{item.name}{item.price}</li>
         </>
     )
 }

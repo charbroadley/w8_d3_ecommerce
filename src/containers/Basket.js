@@ -1,10 +1,11 @@
 import BasketItems from "../components/BasketItems"
 
-const Basket = () => {
+const Basket = ({basket}) => {
+
     return(
         <>
         "This is Basket"
-        <BasketItems/>
+        <BasketItems basket={basket}/>
         </>
     )
 }

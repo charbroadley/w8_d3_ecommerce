@@ -1,11 +1,13 @@
 import BasketItem from "./BasketItem"
 
-const BasketItems = () => {
+const BasketItems = ({basket}) => {
+    const basketItems = basket.map((item) => {
+        return <BasketItem key={item.id} item={item}/>
+    })
     return(
-        <>
-        "This is basket items"
-        <BasketItem/>
-        </>
+        <ul>
+        {basketItems}
+        </ul>
     )
 }
 
