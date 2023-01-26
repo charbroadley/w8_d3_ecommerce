@@ -25,16 +25,18 @@ function Home () {
     }
 
     return (
-    <>
-        <Router>
-            <NavBar/>
-                <Routes>
-                    <Route path="/allItems" element={<AllItems allProducts={allProducts} addToBasket={addToBasket}/>}/>
-                    <Route path="/basket" element={<Basket basket={basket}/>}/>
-                </Routes>
-        </Router>
+        <>
+            <h1> HOME PAGE</h1>
+            <Router>
+                <NavBar/>
+                    <Routes>
+                        <Route path="/allItems" element={<AllItems allProducts={allProducts} addToBasket={addToBasket}/>}/>
+                        <Route path="/basket" element={<Basket basket={basket}/>}/>
+                    </Routes>
+            </Router>
+        </>
 
-    </>
+    
 
     );
 }
